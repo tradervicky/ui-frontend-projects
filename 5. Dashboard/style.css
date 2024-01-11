@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.mainContainer{
+    display: flex;
+   gap: 1.5%;
+    background: #b5c2ca;
+    height: 100vh;
+    padding: 4% 3%;
+}
+#hori{
+    border:.5px solid #081225;
+    width: 90%;
+    align-self: center;
+    margin-bottom: 20px;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    /* border: 2px solid gray; */
+    width: 20%;
+    border-radius: 10px;
+    background-color: #f0f3f4;
+}
+.text-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    font-size: 24px;
+    font-weight: 600;
+    justify-content: center;
+    gap: 10px;
+   padding-top: 20px;
+   margin-bottom: 50px;
+   cursor: pointer;
+}
+.dashboard{
+    width: 78.5%;
+    /* border: 2px solid rgb(99, 119, 138); */
+    border-radius: 8px;
+ 
+}
+.side-item{
+    cursor: pointer;
+    margin: 5px 20px;
+    padding: 8px;
+    display: flex;
+    border-radius: 20px;
+    gap: 25px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.side-item-special{
+    margin: 5px 20px;
+    padding: 8px;
+    display: flex;
+    border-radius: 20px;
+    gap: 25px;
+    background: #081225;
+    color: white;
+}
+.photo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+.photo img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    
+}
+.searchbar{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    border-radius: 10px;
+    background: rgb(233, 230, 230);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#input{
+    
+    width: 30%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+#input input{
+    padding: 10px 10px;
+    border-radius: 20px;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    padding-right: 30px;
+}
+#input i{
+    position: absolute;
+    right: 10px; 
+    color: rgb(75, 69, 69);
+    cursor: pointer;
+}
+.button{
+    background-color: whitesmoke;
+margin-right: 20px;
+border-radius: 20px;
+width: 15%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-right: 20px;
+font-size: 16px;
+font-weight: 500;
+}
+.button button{
+    padding: 12px 15px;
+    border-radius: 20px;
+    border: none;
+    background:#081225;
+    color: white;
+    cursor: pointer;
+}
+.button span{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.DashboardItem{
+    margin-bottom: 15px;
+   background: white;
+   width: 100%;
+   border-radius: 15px;
+    overflow: hidden;
+    margin-top: 15px;
+    
+}
+.dashheadText{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 10px 50px; 
+}
+.lasttext p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.lasttext span{
+    font-weight: 400;
+    color: gray;
+}
+.number{
+    display: flex;
+    gap: 100px;
+    padding-right: 75px;
+}
+.number span{
+    color: gray;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+
+thead{
+    border-bottom: 1px solid gray;
+   
+}
+th, td {
+    
+    padding: 8px;
+    text-align: left;
+    padding-bottom: 10px;
+    
+}
+
+th {
+    background-color: #f2f2f2;
+    font-size: 18px;
+    font-weight: 500;
+}
+tr{
+    transition: 0.3s ease-in-out;
+    background: white;
+}
+
+
+tr:hover {
+    background-color: #e0e0e0;
+}
+.bottomCard{
+    
+    height: 39%;
+    border-radius: 15px;
+    gap: 2%;
+    display: flex;
+}
+.bottomFirst {
+   width: 48%;
+   height: 100%;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   border-radius: 15px;
+   background: white;
+  
+}
+
+.bottomFirst img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    padding: 10px;
+    perspective: 1000px;
+    transition: transform 0.5s;
+}
+.bottomFirst:hover img {
+    transform: rotateY(20deg);
+}
+.bottomSecond{
+    width: 50%;
+border-radius: 15px;
+background: #081225;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+.bottomSecond p{
+    color: white;
+    font-size: 18px ;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+.card1{
+    z-index: -4;
+    height: 50%;
+    border: 1px solid #081225;
+    margin: 30px 20px 60px 60px;
+    background: #2f3541;
+    border-radius: 10px;
+
+}
+.card2{
+    z-index: -3;
+    height: 120%;
+   background: white;
+    margin: -10px 40px 10px -20px;
+    border-radius: 10px;
+}
+.card2Head{
+    display: flex;
+    justify-content: space-around;
+}
+.feedback p{
+    background: rgb(223, 244, 252);
+   padding: 1px 4px;
+   margin-top: 10px;
+   border-radius: 5px;
+   color: rgb(96, 184, 219);
+}
+.bug p{
+    background: rgb(223, 253, 223);
+    color: rgb(82, 212, 82);
+   padding: 1px 4px;
+   margin-top: 10px;
+   border-radius: 5px;
+
+
+}
+.design p{
+    background: rgb(255, 220, 255);
+    color: rgb(235, 75, 235);
+    padding: 1px 4px;
+    margin-top: 10px;
+   border-radius: 5px;
+    
+}
+#readability{
+    color: black;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+#card-nu{
+    color: gray;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+.bottom-icons{
+    margin-left: 30px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.bottom-icons i{
+    cursor: pointer;
+}
+.ineer-icon{
+    display: flex;
+    align-items: center;
+}
+.ineer-icon-item{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    align-content: center;
+    text-align: center;
+    gap: 0;
+}
+.ineer-icon-item p{
+    color: gray;
+    padding-bottom: 25px;
+}
+.ineer-icon-item i{
+    cursor: pointer;
+}
